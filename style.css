@@ -1,0 +1,50 @@
+body {
+    background: fixed;
+    background-color:  #11161b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot {
+    position: relative;
+    left: 25px;
+    height: 25px;
+    width: 25px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.dot1 {
+	background-color: cyan;
+	animation: scale 1s linear infinite;
+}
+.dot2 {
+	background-color: cyan;
+	animation: scale 1s .1s linear infinite;
+}
+.dot3 {
+	background-color: cyan;
+	animation: scale 1s .2s linear infinite;
+}
+
+@keyframes scale {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(.5);
+	}
+	50% {
+		transform: scale(.0);
+	}
+	75% {
+		transform: scale(.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
